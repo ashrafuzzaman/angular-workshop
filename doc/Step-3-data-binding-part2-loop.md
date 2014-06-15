@@ -2,7 +2,7 @@ Data binding
 ============
 Start with the step 2.
 ```bash
-git checkout step-1-setup
+git checkout step-2-data-binding
 ```
  
 ```html
