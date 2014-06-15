@@ -1,6 +1,11 @@
 Setup
 =====
 
+```bash
+git clone git@github.com:ashrafuzzaman/angular-workshop.git
+git checkout step-1-setup
+```
+
 - add the **angular** js script
 - add **ng-app** attribute in the HTML or BODY tag to kick start angular
  
