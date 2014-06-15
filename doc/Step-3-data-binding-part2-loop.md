@@ -1,18 +1,26 @@
 Data binding
 ============
+Topics covered
+--------------
+- Initialize data with ng-init
+- Looping a simple list
+- Apply filtering to a list
+
 Start with the step 2.
 ```bash
 git checkout step-2-data-binding
 ```
  
 ```html
-<div>
-    <label>Name:</label>
-    <input type="text" ng-model="yourName" placeholder="Enter a name here">
-    <hr/>
-    <h1>Hello {{yourName}}!</h1>
+<div data-ng-init="names=['Muntasim', 'Jitu', 'Bazlur', 'Younus', 'Rakib', 'Sharvi']">
+    <h3>Looping over a list</h3>
+    <ul>
+        <li data-ng-repeat="name in names">{{name}}</li>
+    </ul>
 </div>
 ```
 
-Now you can bind you input to any field, even it is not declared before. 
-And you can output the value with just **{{prop}}**.
+You can initialize data with **data-ng-init** and loop over with **data-ng-repeat**.
+
+Filter
+------
