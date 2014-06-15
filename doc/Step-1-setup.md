@@ -1,8 +1,8 @@
 Setup
 =====
 
-- add the angular js script
-- add **ng-app** attribute in the HTML or BODY tag
+- add the **angular** js script
+- add **ng-app** attribute in the HTML or BODY tag to kick start angular
  
 ```html
  <html ng-app>
