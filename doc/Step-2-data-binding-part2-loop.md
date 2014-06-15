@@ -1,6 +1,6 @@
 Data binding
 ============
-Start with the step 1.
+Start with the step 2.
 ```bash
 git checkout step-1-setup
 ```
