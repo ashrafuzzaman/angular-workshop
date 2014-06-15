@@ -3,6 +3,7 @@ Setup
 
 ```bash
 git clone git@github.com:ashrafuzzaman/angular-workshop.git
+cd angular-workshop 
 git checkout step-1-setup
 ```
 
