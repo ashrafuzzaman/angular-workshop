@@ -1,9 +1,8 @@
-Setup
-=====
+Data binding
+============
 
+Start with the step 1.
 ```bash
-git clone git@github.com:ashrafuzzaman/angular-workshop.git
-cd angular-workshop 
 git checkout step-1-setup
 ```
 
@@ -21,5 +20,3 @@ git checkout step-1-setup
  </html>
 
 ```
-
-Continue with [Step 2 data binding part1](Step-2-data-binding-1).
