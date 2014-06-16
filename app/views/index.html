@@ -2,6 +2,7 @@
 <html ng-app>
 <head>
     <script src="../../lib/assets/javascripts/angular.js"></script>
+    <script src="../assets/javascripts/app.js"></script>
 </head>
 <body>
 
@@ -9,8 +10,8 @@
 <input type="text" ng-model="nameFilter" placeholder="Enter a name here">
 <hr/>
 
-<div data-ng-init="users=[{name: 'Muntasim'}, {name: 'Jitu'}, {name: 'Bazlur'}, {name: 'Younus'}, {name: 'Rakib'}, {name: 'Sharvi'}]">
-    <h3>Looping over a list</h3>
+<div ng-controller="SimpleCrtl">
+    <h3>Looping over users</h3>
     <ul>
         <li data-ng-repeat="user in users | filter: nameFilter | orderBy:'name'">
             {{user.name | uppercase }}
