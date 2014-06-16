@@ -1,4 +1,6 @@
-function SimpleCrtl($scope) {
+var demoApp = angular.module('demoApp', []);
+
+demoApp.controller('SimpleCrtl', function ($scope) {
     $scope.users = [
         {name: 'Muntasim', city: 'Dhaka'},
         {name: 'Jitu', city: 'Dhaka'},
@@ -7,4 +9,4 @@ function SimpleCrtl($scope) {
         {name: 'Rakib', city: 'Dhaka'},
         {name: 'Sharvi', city: 'Dhaka'}
     ]
-}
+});
