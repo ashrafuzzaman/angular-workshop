@@ -13,7 +13,7 @@
     <h3>Looping over a list</h3>
     <ul>
         <li data-ng-repeat="user in users | filter: nameFilter | orderBy:'name'">
-            {{user.name}}
+            {{user.name | uppercase }}
         </li>
     </ul>
 </div>
