@@ -12,7 +12,7 @@
 <div data-ng-init="users=[{name: 'Muntasim'}, {name: 'Jitu'}, {name: 'Bazlur'}, {name: 'Younus'}, {name: 'Rakib'}, {name: 'Sharvi'}]">
     <h3>Looping over a list</h3>
     <ul>
-        <li data-ng-repeat="user in users | filter: nameFilter">
+        <li data-ng-repeat="user in users | filter: nameFilter | orderBy:'name'">
             {{user.name}}
         </li>
     </ul>
