@@ -1,21 +1,21 @@
 <!doctype html>
 <html ng-app>
 <head>
-    <script src="../../lib/assets/javascripts/angular.js"></script>
+<script src="../../lib/assets/javascripts/angular.js"></script>
 </head>
 <body>
 
-<label>Name:</label>
-<input type="text" ng-model="nameFilter" placeholder="Enter a name here">
-<hr/>
+  <label>Name:</label>
+  <input type="text" ng-model="nameFilter" placeholder="Enter a name here">
+  <hr/>
 
-<div data-ng-init="users=[{name: 'Muntasim'}, {name: 'Jitu'}, {name: 'Bazlur'}, {name: 'Younus'}, {name: 'Rakib'}, {name: 'Sharvi'}]">
+  <div data-ng-init="users=[{name: 'Muntasim'}, {name: 'Jitu'}, {name: 'Bazlur'}, {name: 'Younus'}, {name: 'Rakib'}, {name: 'Sharvi'}]">
     <h3>Looping over a list</h3>
     <ul>
-        <li data-ng-repeat="user in users | filter: nameFilter | orderBy:'name'">
-            {{user.name | uppercase }}
-        </li>
+      <li data-ng-repeat="user in users | filter: nameFilter | orderBy:'name'">
+        {{user.name | uppercase }}
+      </li>
     </ul>
-</div>
+  </div>
 </body>
 </html>
