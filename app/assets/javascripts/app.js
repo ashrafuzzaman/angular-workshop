@@ -1,10 +1,10 @@
 function SimpleCrtl($scope) {
     $scope.users = [
-        {name: 'Muntasim'},
-        {name: 'Jitu'},
-        {name: 'Bazlur'},
-        {name: 'Younus'},
-        {name: 'Rakib'},
-        {name: 'Sharvi'}
+        {name: 'Muntasim', city: 'Dhaka'},
+        {name: 'Jitu', city: 'Dhaka'},
+        {name: 'Bazlur', city: 'Dhaka'},
+        {name: 'Younus', city: 'Dhaka'},
+        {name: 'Rakib', city: 'Dhaka'},
+        {name: 'Sharvi', city: 'Dhaka'}
     ]
 }
