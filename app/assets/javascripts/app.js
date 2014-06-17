@@ -1,6 +1,8 @@
 var demoApp = angular.module('demoApp', []);
 
-demoApp.controller('SimpleCrtl', function ($scope) {
+var controllers = {};
+
+controllers.SimpleCrtl = function ($scope) {
     $scope.users = [
         {name: 'Muntasim', city: 'Dhaka'},
         {name: 'Jitu', city: 'Dhaka'},
@@ -9,4 +11,6 @@ demoApp.controller('SimpleCrtl', function ($scope) {
         {name: 'Rakib', city: 'Dhaka'},
         {name: 'Sharvi', city: 'Dhaka'}
     ]
-});
+};
+
+demoApp.controller('SimpleCrtl', controllers.SimpleCrtl);
