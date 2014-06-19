@@ -1,6 +1,9 @@
+<label>Name:</label> <input type="text" data-ng-model="nameFilter" placeholder="Enter a name here">
+<hr/>
+
 <h3>Looping over users</h3>
 <ul>
     <li data-ng-repeat="user in users | filter: nameFilter | orderBy:'name'">
-        {{user.name}} - {{user.city | uppercase }}
+        <a href="#/users/{{user.id}}">{{user.name}}</a> - {{user.city | uppercase }}
     </li>
 </ul>

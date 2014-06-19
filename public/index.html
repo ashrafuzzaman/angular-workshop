@@ -3,21 +3,10 @@
 <head>
     <script src="javascripts/angular.js"></script>
     <script src="javascripts/angular-resource.js"></script>
+    <script src="javascripts/angular-route.js"></script>
     <script src="javascripts/app.js"></script>
 </head>
 <body>
-
-<label>Name:</label> <input type="text" data-ng-model="nameFilter" placeholder="Enter a name here">
-<hr/>
-
-<div data-ng-controller="SimpleCrtl">
-    <h3>Looping over users</h3>
-    <ul>
-        <li data-ng-repeat="user in users | filter: nameFilter | orderBy:'name'">
-            {{user.name}} - {{user.city | uppercase }}
-        </li>
-    </ul>
-</div>
-
+<div ng-view></div>
 </body>
 </html>
