@@ -3,7 +3,7 @@ var controllers = {};
 
 demoApp.factory('userFactory', function ($resource) {
     return {
-        users: $resource('http://localhost:3000/users')
+        users: $resource('http://localhost:9000/users')
     };
 });
 
