@@ -1,6 +1,17 @@
 var demoApp = angular.module('demoApp', ['ngResource', 'ngRoute']);
 var controllers = {};
 
+demoApp.directive('userLink', function () {
+    return {
+        restrict: 'AE',
+        replace: 'true',
+        scope: {
+            user: '='
+        },
+        template: '<a href="#/users/{{user.id}}">{{user.name}}</a>'
+    };
+});
+
 demoApp.factory('usersFactory', function ($resource) {
     return $resource('/users', {}, {
         query: { method: 'GET', isArray: true },
