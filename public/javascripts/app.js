@@ -2,9 +2,10 @@ var demoApp = angular.module('demoApp', ['ngResource', 'ngRoute']);
 var controllers = {};
 
 demoApp.factory('usersFactory', function ($resource) {
-    return {
-        users: $resource('/users')
-    };
+    return $resource('/users', {}, {
+        query: { method: 'GET', isArray: true },
+        create: { method: 'POST' }
+    });
 });
 
 demoApp.factory('userFactory', function ($resource) {
@@ -12,7 +13,7 @@ demoApp.factory('userFactory', function ($resource) {
         get: { method: 'GET' },
         update: { method: 'PUT', params: {id: '@id'} },
         delete: { method: 'DELETE', params: {id: '@id'} }
-    })
+    });
 });
 
 demoApp.config(['$routeProvider',
@@ -30,7 +31,7 @@ demoApp.config(['$routeProvider',
     }]);
 
 controllers.UsersCtrl = function ($scope, usersFactory) {
-    $scope.users = usersFactory.users.query();
+    $scope.users = usersFactory.query();
 };
 
 controllers.UserDetailCtrl = function ($scope, $routeParams, userFactory) {
